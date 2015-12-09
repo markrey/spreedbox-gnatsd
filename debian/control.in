@@ -1,0 +1,20 @@
+Source: spreedbox-gnatsd
+Section: utils
+Priority: extra
+Maintainer: struktur AG <opensource@struktur.de>
+Uploaders:
+ Joachim Bauch <bauch@struktur.de>
+Build-Depends:
+ dpkg-dev (>= 1.16.1~),
+ @cdbs@
+Standards-Version: 3.9.3
+
+Package: spreedbox-gnatsd
+Architecture: all
+Depends:
+ gnatsd,
+ ${misc:Depends}
+Provides: ${diverted-files}
+Conflicts: ${diverted-files}
+Description: Meta package to install gnatsd on a Spreedbox
+ This package installs and configures gnatsd on a Spreedbox.
